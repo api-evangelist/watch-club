@@ -1,7 +1,23 @@
 aid: watch-club
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/watch-club.png
 name: Watch Club
-description: 'Watch Club is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Watch Club is a mobile streaming and social platform for young adults, built around
+  original coming-of-age teen drama series that viewers watch and then discuss with other fans through
+  polls, episode reactions, and community threads. Its first original series, RETURN OFFER, launches
+  February 2026, with a slate of additional YA series in development. The app is available on iOS and is
+  operated by Kino Technologies Inc. Watch Club is a GV (Google Ventures) portfolio company in the
+  consumer sector; it publishes no public developer API surface as of this profile.'
 url: https://raw.githubusercontent.com/api-evangelist/watch-club/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Streaming
+- Video
+- Entertainment
+- Social
+- Mobile
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/watch-club-domain-security.yml
 - type: Website
   url: https://watchclubtv.com
+- type: PrivacyPolicy
+  url: https://watchclubtv.com/privacy
+- type: TermsOfService
+  url: https://watchclubtv.com/terms
+- type: SignUp
+  name: Download on the App Store
+  url: https://apps.apple.com/us/app/watch-club-short-shows/id6502298875
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
